@@ -1,4 +1,5 @@
 input.onButtonPressed(Button.A, function () {
+    let speed_list: number[] = []
     if (level == 0) {
         level = 5
     }
@@ -64,20 +65,9 @@ let y1 = 0
 let x1 = 0
 let target_counter = 0
 let speed = 0
-let level = 0
-let speed_list: number[] = []
 let button_action = 0
+let level = 0
 basic.showString("Press A+B to start")
-button_action = 0
-speed_list = [
-100,
-200,
-500,
-1000,
-1500
-]
-level = 4
-speed = speed_list[level]
 basic.forever(function () {
     if (button_action != 1 && target_counter >= 1) {
         x1 = randint(0, 4)
