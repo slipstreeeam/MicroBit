@@ -8,7 +8,7 @@ def on_button_pressed_a():
     level = level - 1
     speed = speed_list[level]
     basic.clear_screen()
-    basic.show_string("" + str(level))
+    basic.show_string("" + str((level)))
     basic.pause(500)
     basic.clear_screen()
     button_action = 0
