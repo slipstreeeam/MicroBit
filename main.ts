@@ -67,6 +67,7 @@ let speed = 0
 let level = 0
 let speed_list: number[] = []
 let button_action = 0
+basic.showString("Press A+B to start")
 button_action = 0
 speed_list = [
 100,

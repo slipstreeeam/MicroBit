@@ -82,23 +82,3 @@ def on_forever():
         basic.pause(speed)
         led.unplot(x1, y1)
 basic.forever(on_forever)
-
-def on_forever2():
-    global x2, y2
-    if button_action != 1 and target_counter >= 2:
-        x2 = randint(0, 4)
-        y2 = randint(0, 4)
-        led.plot(x2, y2)
-        basic.pause(speed)
-        led.unplot(x2, y2)
-basic.forever(on_forever2)
-
-def on_forever3():
-    global x3, y3
-    if button_action != 1 and target_counter >= 3:
-        x3 = randint(0, 4)
-        y3 = randint(0, 4)
-        led.plot(x3, y3)
-        basic.pause(speed)
-        led.unplot(x3, y3)
-basic.forever(on_forever3)
