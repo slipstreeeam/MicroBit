@@ -43,7 +43,7 @@ let level = 0
 let speed_list: number[] = []
 let button_action = 0
 for (let index = 0; index < 1; index++) {
-    basic.showString("Press ab To Start")
+    basic.showString("Press a+b To Start")
 }
 button_action = 0
 speed_list = [
